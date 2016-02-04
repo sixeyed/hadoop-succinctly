@@ -9,9 +9,3 @@ wget --quiet http://mirrors.ukfast.co.uk/sites/ftp.apache.org/hadoop/common/hado
 tar xzf hadoop-2.7.2.tar.gz -C /opt/
 ln -s /opt/hadoop-2.7.2 /opt/hadoop
 rm hadoop-2.7.2.tar.gz
-
-#setup  folders
-/opt/hadoop/bin/hdfs dfs -mkdir /tmp
-/opt/hadoop/bin/hdfs dfs -mkdir -p /user/root
-/opt/hadoop/bin/hdfs dfs -chmod g+w /tmp
-/opt/hadoop/bin/hdfs dfs -chmod g+w /user/root
