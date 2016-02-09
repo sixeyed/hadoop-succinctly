@@ -18,7 +18,7 @@ RUN chmod +x ./setup-ssh.sh
 RUN ./setup-ssh.sh
 
 ADD setup-hdfs.sh /hadoop-setup/
-RUN chmod +x /setup-hdfs.sh
+RUN chmod +x ./setup-hdfs.sh
 RUN ./setup-hdfs.sh
 
 # HDFS
