@@ -14,7 +14,7 @@ ADD ./conf /opt/hadoop/etc/hadoop/
 
 ADD ./ssh/ssh.config /root/.ssh/config
 ADD ./ssh/setup-ssh.sh /hadoop-setup/
-RUN chmod +x /setup-ssh.sh
+RUN chmod +x ./setup-ssh.sh
 RUN ./setup-ssh.sh
 
 ADD setup-hdfs.sh /hadoop-setup/
