@@ -8,14 +8,17 @@ RUN mkdir /hadoop-setup
 WORKDIR /hadoop-setup
 
 ADD install-hadoop.sh /hadoop-setup/
+RUN chmod +x ./install-hadoop.sh
 RUN ./install-hadoop.sh
 ADD ./conf /opt/hadoop/etc/hadoop/
 
 ADD ./ssh/ssh.config /root/.ssh/config
 ADD ./ssh/setup-ssh.sh /hadoop-setup/
+RUN chmod +x /setup-ssh.sh
 RUN ./setup-ssh.sh
 
 ADD setup-hdfs.sh /hadoop-setup/
+RUN chmod +x /setup-hdfs.sh
 RUN ./setup-hdfs.sh
 
 # HDFS
@@ -29,4 +32,5 @@ ENV PATH=$PATH:/opt/hadoop/bin
 
 # run servers:
 ADD start-servers.sh /opt/hadoop/bin/
+RUN chmod +x /opt/hadoop/bin/start-servers.sh
 CMD /opt/hadoop/bin/start-servers.sh
