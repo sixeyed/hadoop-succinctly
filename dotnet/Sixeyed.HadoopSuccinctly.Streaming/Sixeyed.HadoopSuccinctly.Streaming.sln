@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sixeyed.HadoopSuccinctly.Streaming.Mapper", "Sixeyed.HadoopSuccinctly.Streaming.Mapper\Sixeyed.HadoopSuccinctly.Streaming.Mapper.csproj", "{197CA2A2-714C-4719-8299-5CAEF2876C05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sixeyed.HadoopSuccinctly.Streaming.Reducer", "Sixeyed.HadoopSuccinctly.Streaming.Reducer\Sixeyed.HadoopSuccinctly.Streaming.Reducer.csproj", "{1E47F8F9-F34E-4C34-A1B3-FAA72132DD07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{197CA2A2-714C-4719-8299-5CAEF2876C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{197CA2A2-714C-4719-8299-5CAEF2876C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{197CA2A2-714C-4719-8299-5CAEF2876C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{197CA2A2-714C-4719-8299-5CAEF2876C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E47F8F9-F34E-4C34-A1B3-FAA72132DD07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E47F8F9-F34E-4C34-A1B3-FAA72132DD07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E47F8F9-F34E-4C34-A1B3-FAA72132DD07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E47F8F9-F34E-4C34-A1B3-FAA72132DD07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

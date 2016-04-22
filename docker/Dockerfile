@@ -21,6 +21,9 @@ ADD setup-hdfs.sh /hadoop-setup/
 RUN chmod +x ./setup-hdfs.sh
 RUN ./setup-hdfs.sh
 
+# Packages
+ADD ./hadoop-succinctly /hadoop-succinctly
+
 # HDFS
 EXPOSE 50010 50020 50070 50075 50090 8020 9000
 # MapReduce UI

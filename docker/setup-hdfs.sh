@@ -3,6 +3,7 @@
 service ssh start
 $HADOOP_HOME/bin/hdfs namenode -format
 
+chmod +x $HADOOP_HOME/etc/hadoop/hadoop-env.sh
 $HADOOP_HOME/etc/hadoop/hadoop-env.sh
 $HADOOP_HOME/sbin/start-dfs.sh
 
